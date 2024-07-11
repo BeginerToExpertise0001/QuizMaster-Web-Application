@@ -1,1 +1,2 @@
 # QuizMaster-Web-Application
+This HTML document structures a "Quiz Master" web app. It includes sections for starting the quiz, displaying a leaderboard, taking the quiz, and viewing results. Each section has specific content and functionality, such as entering a name, answering questions, and seeing scores. Styling is handled by an external CSS file, and JavaScript manages user interaction. The footer contains copyright information.
