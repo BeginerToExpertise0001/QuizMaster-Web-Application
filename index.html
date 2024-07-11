@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Master</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Homepage Section -->
+    <header>
+        <h1>Welcome to Quiz Master</h1>
+    </header>
+    <div class="container">
+        <section id="homepageSection">
+            <main>
+                <section class="quiz-section">
+                    <h2>Take the Quiz</h2>
+                    <label for="userName">Enter your name:</label>
+                    <input type="text" id="userName">
+                    <button id="startQuizBtn">Start Quiz</button>
+                </section>
+            </main>
+            <!-- Leaderboard Section -->
+            <section id="leaderboardSection" style="display: none;">
+                <header>
+                    <h1>Leaderboard</h1>
+                </header>
+                <main>
+                    <ol id="leaderboardList"></ol>
+                </main>
+            </section>
+        </section>
+        <!-- Quiz Section -->
+        <section id="quizSection" style="display: none;">
+            <header>
+                <h1>Welcome, <span id="quizProgress"></span></h1>
+            </header>
+            <main>
+                <section id="questionSection">
+                    <h2 id="questionNumber"></h2>
+                    <p id="questionText"></p>
+                    <ul id="optionsList">
+                        <li><input type="radio" id="option-1" name="option"><label for="option-1">Option 1</label></li>
+                        <li><input type="radio" id="option-2" name="option"><label for="option-2">Option 2</label></li>
+                        <li><input type="radio" id="option-3" name="option"><label for="option-3">Option 3</label></li>
+                        <li><input type="radio" id="option-4" name="option"><label for="option-4">Option 4</label></li>
+
+                    </ul>
+                    <button id="finishQuizBtn">Next Question</button>
+
+                </section>
+                <section id="finishSection" style="display: none;">
+                    <h2>Quiz Completed!</h2>
+                    <p id="quizScore"></p>
+                    <p id="quizTime"></p>
+                    <button id="finishQuizBtn">Finish Quiz</button>
+                </section>
+            </main>
+
+
+        </section>
+
+        <!-- Dashboard Section -->
+        <section id="dashboardSection" style="display: none;">
+            <header>
+                <h1>Dashboard</h1>
+            </header>
+            <main>
+                <p id="quizScoreDashboard"></p>
+                <p id="quizTimeDashboard"></p>
+                <!-- Back to Homepage Button -->
+                <button id="backToHomepageBtn" style="display: none;">Back to Homepage</button>
+            </main>
+        </section>
+
+    </div>
+    <footer>
+        <p>&copy; 2024 Quiz Master. All rights reserved.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

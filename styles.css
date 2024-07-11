@@ -1,0 +1,232 @@
+    /* Reset default browser styles */
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    /* Global styles */
+    
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 2;
+        background-color: whitesmoke;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 20px;
+        margin-bottom: 0px;
+        display: flex;
+        justify-content: center;
+    }
+    /* Header styles */
+    
+    header {
+        background-color: #275f2b;
+        opacity: 0.8;
+        margin-bottom: 20PX;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        width: 100%;
+        /* Ensure header spans full width */
+        box-sizing: border-box;
+        /* Include padding and border in width calculation */
+    }
+    
+    header h1 {
+        font-size: 2em;
+    }
+    /* Section styles */
+    
+    section {
+        margin-bottom: 20px;
+        padding: 20px;
+        background-color: #f0f0f1;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    /* Homepage Section */
+    
+    #homepageSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* Quiz Section */
+    
+    #quizSection,
+    #dashboardSection,
+    #leaderboardSection {
+        display: none;
+        /* Hidden by default */
+    }
+    /* Responsive adjustments using media queries */
+    
+    @media (min-width: 768px) {
+        .container {
+            padding: 20px;
+            /* Adjusted padding for larger screens */
+            max-width: 1000px;
+            /* Increased max-width for container */
+        }
+        header h1 {
+            font-size: 2.5em;
+            /* Slightly reduced font size for header */
+        }
+        /* Adjust sections for larger screens */
+        section {
+            padding: 30px;
+        }
+        /* Quiz Section specific adjustments */
+        #quizSection,
+        #questionSection,
+        #dashboardSection,
+        #leaderboardSection {
+            width: 400px;
+            height: fit-content;
+            opacity: 2;
+            display: block;
+        }
+        #quizSection {
+            width: inherit;
+            max-width: 900px;
+            /* Decreased max-width for quiz section */
+            margin: 0 auto;
+            max-height: 700px;
+            margin-top: 20px;
+            padding-bottom: 80px;
+            padding: 40px;
+            /* Added padding to quiz section */
+        }
+        #quizSection header h1 {
+            font-size: 2em;
+            /* Adjusted font size for quiz section header */
+            margin-bottom: 20px;
+            /* Added margin bottom to quiz section header */
+        }
+        #quizSection main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #quizSection main section {
+            height: 320px;
+            margin-bottom: 20px;
+            /* Added margin bottom to quiz section sections */
+            padding: 15px;
+            /* Added padding to quiz section sections */
+        }
+        #quizSection main section#questionSection {
+            text-align: center;
+        }
+        #quizSection main section#questionSection ul {
+            list-style: none;
+            padding: 0;
+        }
+        #quizSection main section#questionSection li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        #quizSection main section#questionSection label {
+            margin-right: 10px;
+        }
+        #quizSection main section#finishSection {
+            text-align: center;
+            padding: 15px;
+            /* Added padding to finish section */
+        }
+        #quizSection main section#finishSection button {
+            margin-top: 20px;
+        }
+        /* Dashboard Section specific adjustments */
+        #dashboardSection {
+            text-align: center;
+            height: 350px;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        /* Leaderboard Section specific adjustments */
+        #leaderboardSection {
+            text-align: center;
+            background-color: #f0f0f0;
+            /* Light gray background color */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            max-width: 800px;
+            /* Decreased max-width for leaderboard section */
+            margin: 0 auto;
+        }
+        #leaderboardSection h1 {
+            font-size: 2em;
+            /* Adjusted font size for leaderboard header */
+            margin-bottom: 10px;
+            /* Reduced margin-bottom for leaderboard header */
+        }
+        #leaderboardSection ol {
+            list-style-position: inside;
+            padding-left: 0;
+        }
+        #leaderboardSection li {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            /* Adjusted font size for leaderboard list items */
+        }
+    }
+    /* Button styles */
+    
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    
+    button:hover {
+        background-color: #15b623;
+    }
+    /* Input styles */
+    
+    input[type="text"],
+    input[type="radio"] {
+        padding: 10px;
+        margin-right: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1em;
+        max-width: 300px;
+    }
+    
+    input[type="text"] {
+        width: 30%;
+    }
+    /* Responsive adjustments for inputs */
+    
+    @media (min-width: 768px) {
+        input[type="text"],
+        input[type="radio"] {
+            max-width: none;
+        }
+    }
+    
+    footer {
+        padding-top: 19px;
+        margin-top: 125px;
+        margin-bottom: 0px;
+        text-align: center;
+        background-color: #275f2b;
+        opacity: 0.6;
+        color: white;
+        font: 1em sans-serif;
+        height: 60px;
+    }
